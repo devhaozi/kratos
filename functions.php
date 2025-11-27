@@ -4,7 +4,7 @@
  * 模板函数
  * @author Seaton Jiang <hi@seatonjiang.com>
  * @license GPL-3.0 License
- * @version 2025.02.08
+ * @version 2025.11.28
  */
 
 define('THEME_VERSION', '4.3.3.1');
