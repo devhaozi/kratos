@@ -7,7 +7,7 @@
  * @version 2025.02.08
  */
 
-define('THEME_VERSION', '4.3.2.1');
+define('THEME_VERSION', '4.3.3.1');
 
 if (defined('WP_USE_THEMES') && WP_USE_THEMES === false) {
     return;
