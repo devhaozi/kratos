@@ -4,10 +4,10 @@
  * 模板函数
  * @author Seaton Jiang <hi@seatonjiang.com>
  * @license GPL-3.0 License
- * @version 2023.08.25
+ * @version 2025.02.08
  */
 
-define('THEME_VERSION', '4.3.1.1');
+define('THEME_VERSION', '4.3.2.1');
 
 if (defined('WP_USE_THEMES') && WP_USE_THEMES === false) {
     return;

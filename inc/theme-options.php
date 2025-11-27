@@ -4,7 +4,7 @@
  * 主题选项
  * @author Seaton Jiang <hi@seatonjiang.com>
  * @license GPL-3.0 License
- * @version 2024.01.17
+ * @version 2025.02.08
  */
 
 defined('ABSPATH') || exit;
@@ -177,13 +177,6 @@ CSF::createSection($prefix, array(
             'type' => 'switcher',
             'title' => __('页面图片灯箱', 'kratos'),
             'subtitle' => __('启用/禁用页面图片灯箱功能', 'kratos'),
-            'default' => true,
-        ),
-        array(
-            'id' => 'g_admin_notice',
-            'type' => 'switcher',
-            'title' => __('后台管理员通知', 'kratos'),
-            'subtitle' => __('启用/禁用后台管理员通知', 'kratos'),
             'default' => true,
         ),
         array(
@@ -1263,7 +1256,7 @@ CSF::createSection($prefix, array(
         ),
         array(
             'type' => 'content',
-            'content' => '<ul style="margin: 0 auto;"> <li>' . __('PHP 版本：', 'kratos') . PHP_VERSION . '</li> <li>' . __('Kratos 版本：', 'kratos') . THEME_VERSION . '</li> <li>' . __('WordPress 版本：', 'kratos') . $wp_version . '</li> <li>' . __('User Agent 信息：', 'kratos') . $_SERVER['HTTP_USER_AGENT'] . '</li> </ul>',
+            'content' => '<ul style="margin: 0 auto;"> <li>' . __('PHP 版本：', 'kratos') . PHP_VERSION . '</li> <li>' . __('Kratos 版本：', 'kratos') . THEME_VERSION . '</li> <li>' . __('WordPress 版本：', 'kratos') . $wp_version . '</li> <li>' . __('User Agent 信息：', 'kratos') . '<span id="user-agent"></span></li> </ul><script>document.getElementById("user-agent").textContent = navigator.userAgent;</script>',
         ),
 
         array(
@@ -1281,22 +1274,6 @@ CSF::createSection($prefix, array(
         array(
             'type' => 'content',
             'content' => __('主题源码使用 <a href="https://github.com/devhaozi/kratos/blob/main/LICENSE" target="_blank">GPL-3.0 协议</a> 进行许可，说明文档使用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a> 进行许可。', 'kratos'),
-        ),
-        array(
-            'type' => 'subheading',
-            'content' => __('讨论交流', 'kratos'),
-        ),
-        array(
-            'type' => 'content',
-            'content' => '<div style="max-width:800px;"><img style="width: 70%;height: auto;" src="' . get_template_directory_uri() . '/assets/img/options/discuss.png"></div>',
-        ),
-        array(
-            'type' => 'subheading',
-            'content' => __('打赏支持', 'kratos'),
-        ),
-        array(
-            'type' => 'content',
-            'content' => '如果您有用到我开发维护的项目，请考虑支持一下我的工作，让我可以持续的维护它们，您可在爱发电（<a href="https://afdian.com/a/seatonjiang" target="_blank">https://afdian.com/a/seatonjiang</a>）中进行打赏，谢谢！',
-        ),
+        )
     ),
 ));
