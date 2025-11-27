@@ -449,7 +449,6 @@
             lightGalleryConfig();
         }
     );
-};
 
 function afterPjax() {
     accordionConfig();
